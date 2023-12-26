@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+input{
+  font-size: 2vh;
+  border-radius: 10px;
+  border: 0.5px solid black;
+  background-color: grey;
+  width: 20%;
+  height: 3vh;
+
+}
+::placeholder {
+  text-align: center;
+  font-size: 2vh;
+  color: white;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+input:focus{
+  outline: none !important;
+  border: 0.5px solid #770000;
+}
+textarea:focus{
+  outline: none !important;
+  border: 0.5px solid #770000;
+}
+textarea:focus::placeholder {
+  color: transparent;
+}
+textarea{
+  font-size: 2vh;
+  border-radius: 10px;
+  border: 0.5px solid black;
+  background-color: grey;
+  width: 20%;
+  height: 6vh;
+}
+button{
+  padding-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 4vh;
+  width: 8vw;
+  flex: 0 0 auto;
+  background-color:  grey;
+  color: black;
+  border: 0.5px solid #000;
+  border-radius: 50px;
+  font-size: 1vw;
+}
+button:hover{
+    color: white;
+    background-color: #700;
+}
