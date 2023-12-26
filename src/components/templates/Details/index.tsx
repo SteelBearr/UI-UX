@@ -62,9 +62,12 @@ const Details = () => {
       />
     );
   });
-  const commentsList = filmRetrieve?.data.movie.genres.map((value) => {
-    return <CommentsItem key={value} text={value} />;
-  });
+
+  const handleDeleteComment = (commentId: number) => {
+    const updatedComments = comments.filter((comment) => comment.id !== commentId);
+    setCommentsToLocalStorage(updatedComments);
+    setComments(updatedComments);
+  };
 
   return (
     <Style.Details>
@@ -126,13 +129,15 @@ const Details = () => {
             <Style.Torrents>{torrentsList}</Style.Torrents>
           </Style.Description>
         </Style.Data>
-        <Style.Header>Comments</Style.Header>
+        <Style.Header>Comments ({comments.length})</Style.Header>
+        {comments.length != 0 ? "": "Be first who left the comment!"}
         {comments.map((comment) => (
             <CommentsItem
                 key={comment.id}
                 name={comment.name}
                 text={comment.text}
                 id={comment.id}
+                onDelete={handleDeleteComment}
             />
         ))}
         <Style.AddComment><CommentForm onCommentSubmit={handleCommentSubmit} /></Style.AddComment>

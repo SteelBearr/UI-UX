@@ -52,7 +52,7 @@ textarea{
   width: 20%;
   height: 6vh;
 }
-button{
+.comment{
   padding-top: 1%;
   display: flex;
   justify-content: center;
@@ -67,7 +67,17 @@ button{
   border-radius: 50px;
   font-size: 1vw;
 }
-button:hover{
+.comment:hover{
     color: white;
     background-color: #700;
+}
+button{
+  border: none;
+  width: 4vh;
+  background-color: transparent;
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }

@@ -5,9 +5,13 @@ export const CommentItem = styled.div`
     padding-bottom: 1%;
 `;
 
-export const Header = styled.div`
+export const Container = styled.div`
+    width:30%;
+    display: flex;
     
-    width: 100%;
+`;
+export const Header = styled.div`
+    width: 50%;
     font-weight: 500;
     font-size: 2.5vh;
     margin-left: 3vw;

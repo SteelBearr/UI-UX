@@ -45,6 +45,7 @@ const CommentForm: React.FC<CommentFormProps> = ({ onCommentSubmit }) => {
                     </Style.Text>
                     <Style.Buttton>
                         <button
+                            class="comment"
                             type="submit"
                             >
                             Comment
